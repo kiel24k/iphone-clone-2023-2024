@@ -249,3 +249,92 @@ text-decoration: none;
 .rainbow-phone {}
 
 .img {}
+
+/* section four */
+
+.section-four {
+    display: grid;
+    position:relative;
+    top:110px;
+    justify-content: center;
+   
+}
+.new-model {
+    display:grid;
+    gap:50px;
+}
+.title {
+    text-align: center;
+    font-size:30px;
+}
+.article {
+display: flex;
+gap:10rem;
+
+}
+.content {
+   display: grid;
+   gap:25px;
+   
+}
+.info {
+   display: grid;
+   gap:20px;
+   justify-content: center;
+   text-align: center;
+}
+.info .new{
+    color:red;
+}
+.price{
+display: grid;
+gap:15px;
+position:relative;
+top:20px;
+}
+
+.section-four-btn-buy button {
+    background-color: var(--button-background-color);
+    padding:5px;
+    color:var(--button-color);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    width: 60px;
+    
+}
+.section-four-link a {
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+.section-four-link a:hover{
+    text-decoration:underline;
+}
+.section-four .choice .one {
+    height: 12px;
+    width: 12px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+.section-four .choice .two{
+    height: 12px;
+    width: 12px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+}
+.section-four .choice .three{
+    height: 12px;
+    width: 12px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+.section-four .choice .four{
+    height: 12px;
+    width: 12px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
