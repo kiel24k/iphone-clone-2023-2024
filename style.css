@@ -16,8 +16,9 @@
     font-family: sans-serif;
 }
 
+
 main {
-    background-color: white;
+    
     display: grid;
  
 }
@@ -28,13 +29,15 @@ header {
     display: grid;
     width: 100%;
 }
+/* product list */
+
 
 .nav-main {
     padding: 15px;
-    background-color: var(--primary-color);
+    background-color: rgb(238, 234, 234);
     position: relative;
-
-
+    transition: all ease-out 0.2s;
+    
 }
 
 .nav-main ul {
@@ -59,6 +62,41 @@ header {
     margin-bottom: 25px;
 
 }
+.store-partner {
+    position:absolute;
+    height: 0rem;
+    overflow: hidden;
+    top:3rem;
+    z-index: 999;
+    min-width: 100%;
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 1px 15px 15px white;
+    transition: all ease-in-out 0.2s;
+    transition-delay: 0.3s;
+    
+}
+.store-section {
+    background-color: transparent;
+    width:56rem;
+}
+.store-content {
+    display: flex;
+    gap:5rem;
+    transition: all linear 0s;
+    transition-delay: 0.3s;
+}
+.show-store{
+    height:20rem;
+  
+}
+.nav-display{
+    background-color: white;
+}
+
+
+
 
 .nav-primary img {
     width: 50px;
@@ -86,6 +124,13 @@ header {
     background-color: var(--main-color);
     height: 795px;
     width: 100%;
+    
+}
+.show-section-one-display{
+    background-color: rgb(0, 0, 0);
+    backdrop-filter:blur(100%);
+    
+   
 }
 
 .titanium-background {
@@ -136,6 +181,15 @@ header {
 
 .section-one-img-black-iphone {
     width: 100%;
+    background-color: black;
+  
+    
+}
+.show-black-iphone-display{
+    filter: blur(8px);
+    background-color: rgba(0, 0, 1, 0.9);
+    backdrop-filter:blur(5px);
+   
 }
 
 /*section two*/
@@ -336,5 +390,19 @@ top:20px;
     background-color: black;
     border-radius: 50%;
     display: inline-block;
+}
+.section-four .content-table{
+    
+}
+.section-four .content-table td{
+    text-align:center;
+    padding:30px;
+}
+.section-four .content-specs{
+    height: 100px;
+    width: 250px;
+}
+.content-table{
+ overflow-x: auto;
 }
 
