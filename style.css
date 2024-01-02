@@ -9,6 +9,10 @@
     --button-border: none;
     --button-border-radius: 25px;
     --gap-nav-content: 10rem;
+    --nav-height-display: 21rem;
+    --transition-nav: all ease-out 0.3s;
+    --nav-box-shadow: 1px 15px 15px white;
+
 }
 
 * {
@@ -24,14 +28,20 @@ main {
 
 }
 
+main a {}
 
-/* header */
+main h3 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+
+
 header {
     display: grid;
     width: 100%;
 }
 
-/* product list */
 
 
 .nav-main {
@@ -40,11 +50,17 @@ header {
     position: relative;
     transition: all ease-out 0.2s;
 
+
+}
+.nav-main p{
+   
+    padding-left:30px;
+    padding-right:30px
 }
 
 .nav-main ul {
     display: flex;
-    gap: 50px;
+    gap: px;
     justify-content: center;
 }
 
@@ -57,6 +73,8 @@ header {
 .nav-main li a {
     text-decoration: none;
     font-size: 0.8rem;
+    
+   
 }
 
 .nav-primary {
@@ -64,6 +82,16 @@ header {
     margin-bottom: 25px;
 
 }
+
+.search p {
+ font-size: 15px;
+}
+
+.cart p {
+    font-size: 15px;
+}
+
+
 
 .store-partner {
     position: absolute;
@@ -91,7 +119,12 @@ header {
     gap: 10rem;
     transition: all ease-out 0.3s;
     transition-delay: 0s;
+    position: relative;
+    right:3.4rem;
 }
+
+.shop-special {}
+
 
 .store-content h1 {
     position: relative;
@@ -103,7 +136,7 @@ header {
 
 }
 
-/* mac-partner */
+
 .mac-partner {
     position: absolute;
     width: 100%;
@@ -128,7 +161,7 @@ header {
     display: flex;
     gap: 25px;
     position: relative;
-    right: 22px;
+    right: 5.9rem;
     text-transform: capitalize;
 }
 
@@ -141,7 +174,7 @@ header {
     height: 21rem;
 }
 
-/* ipad partner */
+
 .ipad-partner {
     display: grid;
     justify-content: center;
@@ -164,10 +197,10 @@ header {
 
 .ipad-content {
     display: flex;
-    gap: 25px;
+    gap: 40px;
     text-transform: capitalize;
     position: relative;
-   right:22px;
+    right: 5rem;
 }
 
 .ipad-content h1 {
@@ -179,19 +212,232 @@ header {
     height: 21rem;
 }
 
-.explore-ipad {}
 
-.shop-ipad {}
-
-.more-from-ipad {}
-
-
-.nav-display {
+.iphone-partner {
+    display: grid;
+    justify-content: center;
     background-color: white;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    height: 0;
+    z-index: 999;
+    box-shadow: 1px 15px 15px white;
+    overflow: hidden;
+    transition: all ease-out 0.3s;
+    transition-delay: 0s;
+
+
+}
+
+.iphone-section {
+    display: grid;
+}
+
+.iphone-content {
+    display: flex;
+    gap: 40px;
+    text-transform: capitalize;
+    position: relative;
+    right: 6.8rem;
+
+}
+
+
+.iphone-display {
+    height: 21rem;
+}
+
+
+.watch-partner {
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 1px 15px 15px white;
+    transition: var(--transition-nav);
+    overflow: hidden;
+}
+
+.watch-section {
+    display: grid;
+}
+
+.watch-content {
+    display: flex;
+    gap: 40px;
+    text-transform: capitalize;
+    position: relative;
+    left:5px;
+}
+
+.watch-display {
+    height: var(--nav-height-display);
 }
 
 
 
+.airpods-partner {
+    display: grid;
+    position: absolute;
+    top: 3rem;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    z-index: 999;
+    height: 0px;
+    overflow: hidden;
+    transition: var(--transition-nav);
+    box-shadow: var(--nav-box-shadow);
+
+}
+
+.airpods-section {}
+
+.airpods-content {
+    display: flex;
+    gap: 55px;
+    position: relative;
+   left:10px;
+    text-transform: capitalize;
+
+}
+
+.airpods-display {
+    height: var(--nav-height-display);
+}
+
+
+.tv {
+    display: grid;
+    position: absolute;
+    top: 3rem;
+    justify-content: center;
+    width: 100%;
+    height: 0px;
+    z-index: 999;
+    box-shadow: var(--nav-box-shadow);
+    overflow: hidden;
+    transition: var(--transition-nav);
+    background-color: white;
+}
+
+.tv-section {
+    display: grid;
+}
+
+.tv-content {
+    display: flex;
+    gap: 45px;
+    text-transform: capitalize;
+    position: relative;
+    left:10px;
+
+}
+
+.tv-display {
+    height: var(--nav-height-display);
+}
+
+.accessories-partner {
+    display: grid;
+    background-color: white;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    justify-content: center;
+    height: 0;
+    z-index: 999;
+    box-shadow: var(--nav-box-shadow);
+    overflow: hidden;
+    transition: var(--transition-nav);
+}
+
+.accessories-section {
+    display: grid;
+}
+
+.accessories-content {
+    display: flex;
+    gap: var(--gap-nav-content);
+    position: relative;
+    right: 8.6rem;
+    text-transform: capitalize;
+
+}
+
+.accessories-display {
+    height: 21rem;
+}
+
+.support-partner {
+    display: grid;
+    background-color: red;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 3rem;
+    height: 0;
+    transition: var(--transition-nav);
+    overflow: hidden;
+}
+
+.support-section {
+    display: grid;
+}
+
+.support-content {
+    display: flex;
+    gap: 10rem;
+    text-transform: capitalize;
+}
+
+.support-display {
+    height: 21rem;
+} */
+
+
+
+
+
+/* .link-section {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    background:white;
+    box-shadow:var(--nav-box-shadow);
+    overflow: hidden;
+    position: absolute;
+    top:3rem;
+    z-index:999 ;
+    transition: linear all 1s;
+}
+
+.nav-contents {
+    display: flex;
+    gap: 50px;
+    justify-content: start;
+    position: relative;
+    width:50rem;
+    background-color: transparent;
+    height:21rem;
+    right: 120px;
+    transition: linear all 1s;
+}
+.active {
+    height: 21rem;
+    transition: linear all 1s;
+    background-color: red;
+   
+}
+.nav-contents:not(.active) {
+    display: none;
+} */
 
 .nav-primary img {
     width: 50px;
